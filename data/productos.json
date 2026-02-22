@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "nombre": "Body algodón manga corta",
+    "precio": 8500,
+    "categoria": "bodys",
+    "talle": "0-3M",
+    "color": "Blanco",
+    "imagen": "assets/img/body-algodon-manga-corta.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Body manga larga estampado",
+    "precio": 9200,
+    "categoria": "bodys",
+    "talle": "3-6M",
+    "color": "Celeste",
+    "imagen": "assets/img/body-manga-larga-estampado.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Pijama plush con cierre",
+    "precio": 14500,
+    "categoria": "pijamas",
+    "talle": "6-9M",
+    "color": "Rosa",
+    "imagen": "assets/img/pijama-plush.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Pijama de algodón 2 piezas",
+    "precio": 13200,
+    "categoria": "pijamas",
+    "talle": "9-12M",
+    "color": "Gris",
+    "imagen": "assets/img/pijama-2-piezas.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Conjunto batita + ranita",
+    "precio": 16800,
+    "categoria": "conjuntos",
+    "talle": "0-3M",
+    "color": "Beige",
+    "imagen": "assets/img/conjunto-batita-ranita.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Conjunto buzo + pantalón frisa",
+    "precio": 19500,
+    "categoria": "conjuntos",
+    "talle": "12-18M",
+    "color": "Verde pastel",
+    "imagen": "assets/img/conjunto-buzo-pantalon frisa.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Vestidito algodón con volados",
+    "precio": 17800,
+    "categoria": "vestidos",
+    "talle": "6-9M",
+    "color": "Rosa pastel",
+    "imagen": "assets/img/vestidito-volados.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Gorrito tejido suave",
+    "precio": 6200,
+    "categoria": "accesorios",
+    "talle": "Único",
+    "color": "Crema",
+    "imagen": "assets/img/gorrito-tejido.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Babero impermeable",
+    "precio": 4800,
+    "categoria": "accesorios",
+    "talle": "Único",
+    "color": "Celeste",
+    "imagen": "assets/img/babero-impermeable.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Campera liviana con capucha",
+    "precio": 22500,
+    "categoria": "abrigos",
+    "talle": "18-24M",
+    "color": "Gris claro",
+    "imagen": "assets/img/campera-capucha.jpg"
+  }
+]

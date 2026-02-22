@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luz de Abril | Ropa para bebés</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Toastify CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="brand">Luz de Abril - Ropa para bebés</h1>
+
+    <div class="header-actions">
+      <div class="user-box">
+        <span id="user-saludo">Invitado</span>
+        <button id="btn-logout" class="btn-link hidden" type="button">Salir</button>
+      </div>
+
+      <div class="auth-actions" id="auth-actions">
+        <button id="btn-login" class="btn-chip" type="button">Ingresar</button>
+        <button id="btn-register" class="btn-chip btn-chip-primary" type="button">Crear cuenta</button>
+      </div>
+
+      <button class="carrito-icono" id="btn-carrito" type="button" aria-label="Abrir carrito">
+        🛒 <span id="contador-carrito">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="contenedor">
+
+    <!-- PRODUCTOS -->
+    <section class="productos">
+      <h2>Nuestra colección</h2>
+      <div id="lista-productos" class="lista-productos"></div>
+    </section>
+
+    <!-- CARRITO -->
+    <aside class="carrito" id="panel-carrito">
+      <div class="carrito-top">
+        <h2>Tu carrito</h2>
+        <button id="cerrar-carrito" class="btn-x" type="button" aria-label="Cerrar carrito">✖</button>
+      </div>
+
+      <div id="carrito-items" class="carrito-items">
+        <p class="carrito-vacio">El carrito está vacío</p>
+      </div>
+
+      <div class="carrito-footer">
+        <p>Total: $<span id="total">0</span></p>
+        <button id="vaciar-carrito" class="btn-secundario" type="button">Vaciar carrito</button>
+        <button id="finalizar-compra" class="btn-principal" type="button">Finalizar compra</button>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Proyecto Final JavaScript - Coderhouse</p>
+    <p>Simulador de carrito de compras</p>
+  </footer>
+
+  <!-- MODAL AUTH -->
+  <div class="modal hidden" id="modal-auth" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h3 id="modal-title">Ingresar</h3>
+        <button class="btn-x" id="modal-close" type="button" aria-label="Cerrar">✖</button>
+      </div>
+
+      <form id="form-auth" class="modal-form">
+        <label>
+          Email
+          <input type="email" id="auth-email" required placeholder="tuemail@correo.com" autocomplete="email">
+        </label>
+
+        <label>
+          Contraseña
+          <input type="password" id="auth-pass" required minlength="6" placeholder="Mínimo 6 caracteres" autocomplete="current-password">
+        </label>
+
+        <button type="submit" class="btn-principal" id="auth-submit">Continuar</button>
+        <p class="help" id="auth-help"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- LIBRERÍAS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <!-- JS (orden obligatorio) -->
+  <script src="js/carrito.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
